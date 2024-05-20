@@ -4,7 +4,7 @@
   "main": "./dist/web-component.umd.cjs",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && npm run package && npm run build:wc",
+    "build": "vite build",
     "build:wc": "vite build -c vite.wc.config.ts",
     "preview": "vite preview",
     "package": "svelte-kit sync && svelte-package && npm run build:wc && publint",
@@ -70,10 +70,15 @@
     "access": "public"
   },
   "dependencies": {
+    "@lit-protocol/lit-node-client": "^5.0.1",
+    "@lit-protocol/lit-node-client-nodejs": "^5.0.1",
     "@requestnetwork/payment-detection": "^0.42.0",
     "@requestnetwork/payment-processor": "^0.44.0",
     "@web3-onboard/core": "^2.21.5",
     "@web3-onboard/injected-wallets": "^2.10.15",
-    "@web3-onboard/walletconnect": "^2.5.4"
+    "@web3-onboard/walletconnect": "^2.5.4",
+    "axios": "^1.6.8",
+    "multiformats": "^13.1.0",
+    "siwe": "^2.3.2"
   }
 }

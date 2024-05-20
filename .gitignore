@@ -2,3 +2,4 @@
 /.svelte-kit
 /dist
 .DS_Store
+*.d.ts
