@@ -21,6 +21,7 @@ export default defineConfig({
       zlib: "browserify-zlib",
       $src: path.resolve(__dirname, "src"),
       $utils: path.resolve(__dirname, "src/utils"),
+      $lib: path.resolve(__dirname, "src/lib"),
     },
   },
   build: {
@@ -54,7 +55,7 @@ export default defineConfig({
   },
   optimizeDeps: {
     exclude: ["@ethersproject/hash", "wrtc", "http"],
-    include: ["js-sha3", "@ethersproject/bignumber"],
+    include: ["js-sha3", "@ethersproject/bignumber", "multiformats"],
     esbuildOptions: {
       define: {
         global: "globalThis",
