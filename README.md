@@ -1,3 +1,5 @@
+> **Deprecated**: Encryption using Lit Protocol was added to Request Network SDK so this prototype is no longer needed.
+
 # encrypt-requests-with-wallet-prototype
 
 A prototype to demonstrate how to encrypt and decrypt requests with a wallet.
